@@ -1,0 +1,12 @@
+typedef struct hash t_hash;
+t_hash* criar_hash(double fc);
+int funcao_hashing(t_hash* t, int chave);
+void inserir_hash(t_hash* t, t_sensores* sensor);
+void* buscar_hash(t_hash* t, int chave);
+void* imprimir_media(t_hash* t, int chave);
+void* remover_hash(t_hash* t, int chave);
+t_hash* rehashing(t_hash *atual);
+void imprimir_hash(t_hash* t);
+void imprimir_elem_hash(void* ee);
+t_sensores* criar_sensores(int Pump_ID, float Class_ID, float Temperatura, float Vibrations, float Pressure, float Flow_Rate, float RPM, float Operational_Hours, float Maintaince_Flag);
+typedef struct sensores t_sensores;
